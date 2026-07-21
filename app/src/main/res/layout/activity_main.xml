@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+android:background="#F5F5F5">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+android:paddingLeft="24dp"
+android:paddingRight="24dp"
+android:paddingBottom="24dp">
+
+<!-- CONTENT -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<TextView
+android:id="@+id/txtStatus"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Searching..."
+android:textColor="#00b7ff"
+android:textSize="12sp"
+android:textStyle="bold"
+android:gravity="center"
+android:layout_marginBottom="4dp" />
+
+<TextView
+android:id="@+id/txtLocation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Last seen at: -"
+android:textSize="12sp"
+android:textColor="#3d3d3d"
+android:gravity="center"
+android:layout_marginBottom="12dp" />
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnShowMap"
+style="@style/Widget.MaterialComponents.Button.TextButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="📍 SHOW ON MAP"
+android:textSize="14sp"
+android:textColor="#3d3d3d"
+android:layout_gravity="center"
+android:visibility="gone"
+android:layout_marginBottom="12dp" />
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="TRACKER"
+android:textSize="24sp"
+android:textColor="#3d3d3d"
+android:textStyle="bold"
+android:gravity="center"
+android:layout_marginBottom="12dp" />
+
+<!-- BUTTON CONTAINER -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingStart="16dp"
+android:paddingEnd="16dp">
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnPing"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:layout_marginBottom="12dp"
+android:text="PING"
+android:textSize="14sp"
+android:textColor="#ffffff"
+android:backgroundTint="#00b7ff"
+app:cornerRadius="16dp"
+app:elevation="0dp"
+android:stateListAnimator="@null" />
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnBuzzOn"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:layout_marginBottom="12dp"
+android:text="ALARM ON"
+android:textSize="14sp"
+android:textColor="#ffffff"
+android:backgroundTint="#46d331"
+app:cornerRadius="16dp"
+app:elevation="0dp"
+android:stateListAnimator="@null" />
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnBuzzOff"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:layout_marginBottom="12dp"
+android:text="ALARM OFF"
+android:textSize="14sp"
+android:textColor="#ffffff"
+android:backgroundTint="#F44336"
+app:cornerRadius="16dp"
+app:elevation="0dp"
+android:stateListAnimator="@null" />
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnSleep"
+style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:text="POWER SAVE"
+android:textSize="14sp"
+app:cornerRadius="16dp"
+android:textColor="#3d3d3d"
+app:strokeColor="#3d3d3d"
+app:strokeWidth="1.6dp" />
+
+</LinearLayout>
+
+</LinearLayout>
+
+<!-- FOOTER -->
+<TextView
+android:id="@+id/footer"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="BOLD Studio"
+android:textSize="12sp"
+android:gravity="center"
+android:textColor="#3d3d3d"
+android:textStyle="bold"
+android:layout_marginTop="24dp" />
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+# Android / Gradle
+.gradle/
+build/
+app/build/
+
+# Local machine config
+local.properties
+.DS_Store
+
+# Android Studio user files
+.idea/
+*.iml
+
+# Signing keys - NEVER upload
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# Generated app files
+*.apk
+*.aab
+
+# Temporary backups / duplicate copied resources
+app/src/main/invalid-resource-duplicates-backup-*/
