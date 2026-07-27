@@ -1,3 +1,4 @@
 # DYFS Tracker App
 
-Static app for DYFS Tracker App that can be connected with the DYFS Tracker Device (made in Arduino, C++).
+An Android app for connecting to the DYFS Tracker device via Bluetooth Low Energy (BLE).  
+The tracker firmware is built with Arduino/C++ for an ESP32-based device.
